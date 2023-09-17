@@ -1,5 +1,5 @@
 function HomePage() {
-  return <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut harum laboriosam nobis nulla obcaecati officia quas quidem repellat sint ullam.</h1>;
+  return <h1>chanign header</h1>;
 }
 
 export default HomePage;
