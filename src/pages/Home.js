@@ -1,5 +1,5 @@
 function HomePage() {
-  return <h1>Testing branch</h1>;
+  return <h1>Checking gitHubActions</h1>;
 }
 
 export default HomePage;
