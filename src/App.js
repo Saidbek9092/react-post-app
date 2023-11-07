@@ -1,9 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// import BlogPage, { loader as postsLoader } from './pages/Blog';
 import HomePage from './pages/Home';
-// import PostPage, { loader as postLoader } from './pages/Post';
 import RootLayout from './pages/Root';
 
 const BlogPage = lazy(() => import('./pages/Blog'));
