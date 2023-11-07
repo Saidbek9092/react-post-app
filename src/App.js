@@ -46,7 +46,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const a = 24;
   return <RouterProvider router={router} />;
 }
 
