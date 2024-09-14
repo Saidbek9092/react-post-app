@@ -1,1 +1,1 @@
-const B = 1;
+const B = 2;
