@@ -1,7 +1,6 @@
 import classes from "./PostItem.module.css";
 
-
-// Just featB first commit
+// Just featB first commit this is branch A
 // another commit
 
 function PostItem({ post }) {
