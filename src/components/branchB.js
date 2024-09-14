@@ -1,2 +1,1 @@
-const B = 2;
-const BB = 2;
+const BBB = 12;
