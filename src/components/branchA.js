@@ -1,2 +1,1 @@
-console.log("testA");
-console.log("testAA");
+console.log("removed");
