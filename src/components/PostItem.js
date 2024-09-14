@@ -1,8 +1,5 @@
 import classes from "./PostItem.module.css";
 
-// Just featB first commit
-// another commit
-
 function PostItem({ post }) {
   return (
     <article className={classes.item}>
