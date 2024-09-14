@@ -1,7 +1,7 @@
 import classes from "./PostItem.module.css";
 
-// Just added featA branch commit
-// Just added featA branch commit 2
+// Just featB first commit
+// another commit
 
 function PostItem({ post }) {
   return (
