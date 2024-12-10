@@ -9,6 +9,8 @@ const BlogPage = lazy(() => import("./pages/Blog"));
 const PostPage = lazy(() => import("./pages/Post"));
 const data = "saidbek";
 
+const newdata = "newdata";
+
 const router = createBrowserRouter([
   {
     path: "/",
