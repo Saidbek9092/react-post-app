@@ -1,15 +1,16 @@
-import { lazy, Suspense } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { lazy, Suspense } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import HomePage from './pages/Home';
-import RootLayout from './pages/Root';
+import HomePage from "./pages/Home";
+import RootLayout from "./pages/Root";
 
+const data = "saidbek";
 const BlogPage = lazy(() => import('./pages/Blog'));
 const PostPage = lazy(() => import('./pages/Post'));
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <RootLayout />,
     children: [
       {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: 'posts',
+        path: "posts",
         children: [
           {
             index: true,
@@ -27,17 +28,17 @@ const router = createBrowserRouter([
               </Suspense>
             ),
             loader: () =>
-              import('./pages/Blog').then((module) => module.loader()),
+              import("./pages/Blog").then(module => module.loader()),
           },
           {
-            path: ':id',
+            path: ":id",
             element: (
               <Suspense fallback={<p>Loading...</p>}>
                 <PostPage />
               </Suspense>
             ),
-            loader: (meta) =>
-              import('./pages/Post').then((module) => module.loader(meta)),
+            loader: meta =>
+              import("./pages/Post").then(module => module.loader(meta)),
           },
         ],
       },
