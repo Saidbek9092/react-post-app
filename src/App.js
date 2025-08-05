@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home";
 import RootLayout from "./pages/Root";
 
-const data = "saidbek";
 const BlogPage = lazy(() => import('./pages/Blog'));
 const PostPage = lazy(() => import('./pages/Post'));
 
