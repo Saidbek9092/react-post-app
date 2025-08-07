@@ -1,7 +1,8 @@
-import { lazy, Suspense } from "react";
+import {Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import HomePage from "./pages/Home";
+
 import RootLayout from "./pages/Root";
 
 
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
           {
             path: ":id",
             element: (
-              <Suspense fallback={<p>Loading...</p>}>
+              <Suspense fallback={<p>Loading asdasdasdas...</p>}>
                 <PostPage />
               </Suspense>
             ),
